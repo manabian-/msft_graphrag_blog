@@ -1,28 +1,21 @@
-# Microsoft GraphRAG with an RDF Knowledge Graph
-Code to accompany my blog posts about Microsoft GraphRAG with an RDF Knowledge Graph.
+## Overview
 
-![](images/RAG_with_KnowledgeGraph.png)
+Unofficial fork of ianormy/msft_graphrag_blog (original: https://github.com/ianormy/msft_graphrag_blog).
 
-## Blog Posts
+Modified to run on Databricks replace Elasticsearch with Databricks Vector Search.
 
-[Microsoft GraphRAG with an RDF Knowledge Graph - Part 1](https://medium.com/@ianormy/microsoft-graphrag-with-an-rdf-knowledge-graph-part-1-00a354afdb09)
+Original work by Ian Ormesher; this fork is distributed under GPL-3.0 — see [LICENSE](https://github.com/ianormy/msft_graphrag_blog/blob/main/README.md).
 
-Using a local LLM & Encoder to do Microsoft’s GraphRAG.
+## What's Changed
 
-[Microsoft GraphRAG with an RDF Knowledge Graph - Part 2](https://medium.com/@ianormy/microsoft-graphrag-with-an-rdf-knowledge-graph-part-2-d8d291a39ed1)
+* Modified `by_databricks/01_create_local_global`, based on `Part3/create_local_global`, as follows:
+  * Replaced Elasticsearch-based operations with Mosaic AI Vector Search.
+  * Replaced operations using the LLM Studio API with Mosaic AI Model Serving.
+* Added `by_databricks/00_setup` to set up the environment for running on Databricks with GraphDB (Graphwise Sandbox).
+* Added `by_databricks/00_config` to hold shared configuration values.
 
-Uploading the output from Microsoft’s GraphRAG into an RDF Store.
 
-[Microsoft GraphRAG with an RDF Knowledge Graph - Part 3](https://medium.com/@ianormy/microsoft-graphrag-with-an-rdf-knowledge-graph-part-3-328f85d7dab2)
+## Services Used
 
-Using SPARQL and the Knowledge Graph for RAG.
-
-## Data
-
-The ontology file is in the data folder:
-
-[msft-graphrag.owl](data/msft-graphrag.owl)
-
-![](images/msft_graphrag_ontology.png)
-
-All the other data files are on my Google Drive [here](https://drive.google.com/drive/folders/1JzMiaOo3UomwPlhn0_g7j8xsnxvEHDqf?usp=sharing)
+- [Databricks Free Edition](https://www.databricks.com/learn/free-edition)
+- [Graphwise Sandbox(GraphDB)](https://sandbox.graphwise.ai/login?_gl=1*gp2m4o*_gcl_au*MjA1NzM5MDEwNS4xNzYxMTQ4MTAy)
