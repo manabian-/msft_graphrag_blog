@@ -19,3 +19,11 @@ Original work by Ian Ormesher; this fork is distributed under GPL-3.0 — see [L
 
 - [Databricks Free Edition](https://www.databricks.com/learn/free-edition)
 - [Graphwise Sandbox(GraphDB)](https://sandbox.graphwise.ai/login?_gl=1*gp2m4o*_gcl_au*MjA1NzM5MDEwNS4xNzYxMTQ4MTAy)
+
+
+## Detailed Guide
+
+For a step-by-step walkthrough (Japanese):
+
+- [Databricks と GraphDB にて Microsoft GraphRAG with an RDF Knowledge Graph の記事を実行する方法](https://qiita.com/manabian/items/3858945b6aac5d733660)
+
